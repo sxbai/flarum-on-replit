@@ -26,4 +26,4 @@
 bash <(curl -s https://raw.githubusercontent.com/sxbai/flarum-on-replit/master/install.sh)
 ```
 ## 演示图
-![](https://raw.githubusercontent.com/sxbai/flarum-on-replit/master/2023-03-31211933.png)
+![](https://raw.iqiq.io//sxbai/flarum-on-replit/master/2023-03-31211933.png)
