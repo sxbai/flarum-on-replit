@@ -10,12 +10,11 @@ cd ..
 wget -O a.zip https://github.com/sxbai/flarum-on-replit/raw/master/a.zip
 nix-env -iA nixpkgs.unzip
 unzip a.zip
-cp a/.cache .
+cp -r a/.cache .
 rm -r a/
 cp -r build/.replit . && cp -r build/replit.nix .
 rm -rf build/
-mkdir public
-cd public
+mkdir public && cd public
 composer create-project flarum/flarum .
 composer require flarum-lang/chinese-simplified
 cd ..
