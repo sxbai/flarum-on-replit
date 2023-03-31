@@ -10,7 +10,7 @@ cd ..
 wget -O a.zip https://github.com/sxbai/flarum-on-replit/raw/master/a.zip
 nix-env -iA nixpkgs.unzip
 unzip a.zip
-cp -r a/.cache .
+cp -r a/.cache .cache
 rm -r a/
 cp -r build/.replit . && cp -r build/replit.nix .
 rm -rf build/
