@@ -22,4 +22,4 @@ echo "脚本作者：舒夏"
 echo "GitHub开源地址：https://github.com/sxbai/flarum-on-replit"
 echo "恭喜搭建完成"
 echo "点击Run立即运行项目"
-rm -rf README.md
+rm -rf a.zip && rm -rf README.md
