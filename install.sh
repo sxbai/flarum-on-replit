@@ -7,17 +7,19 @@ cd build
 wget -O .replit https://github.com/sxbai/flarum-on-replit/raw/master/.replit
 wget -O replit.nix https://github.com/sxbai/flarum-on-replit/raw/master/replit.nix
 cd ..
-cp -r build/.replit . && cp -r build/replit.nix .
 wget -O a.zip https://github.com/sxbai/flarum-on-replit/raw/master/a.zip
 nix-env -iA nixpkgs.unzip
 unzip a.zip
 cp -r a/.cache .cache
 rm -rf build/
+nix-env -iA nixpkgs.php80Packages.composer
 mkdir public
 cd public
 composer create-project flarum/flarum .
 composer require flarum-lang/chinese-simplified
-cd .. && rm -r a/
+cd ..
+cp -r build/.replit . && cp -r build/replit.nix .
+rm -r a/
 echo "Flarum论坛一键搭建脚本"
 echo "脚本作者：舒夏"
 echo "GitHub开源地址：https://github.com/sxbai/flarum-on-replit"
