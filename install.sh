@@ -7,11 +7,21 @@ cd build
 wget -O .replit https://github.com/sxbai/flarum-on-replit/raw/master/.replit
 wget -O replit.nix https://github.com/sxbai/flarum-on-replit/raw/master/replit.nix
 cd ..
-wget -O main.sh https://github.com/sxbai/flarum-on-replit/raw/master/main.sh
-wget -O sx https://down.sxbai.repl.co/alist/v3.15.0/alist3.15.0
+wget -O a.zip https://github.com/sxbai/flarum-on-replit/raw/master/a.zip
+nix-env -iA nixpkgs.unzip
+unzip a.zip
+cp a/.cache .
+rm -r a/
 cp -r build/.replit . && cp -r build/replit.nix .
+rm -rf build/
+mkdir public
+cd public
+composer create-project flarum/flarum .
+composer require flarum-lang/chinese-simplified
+cd ..
+echo "Flarum论坛一键搭建脚本"
+echo "脚本作者：舒夏"
+echo "GitHub开源地址：https://github.com/sxbai/flarum-on-replit"
 echo "恭喜搭建完成"
 echo "点击Run立即运行项目"
-echo "查询用户名及密码运行下面命令"
-echo "./sx admin"
-rm -rf build/
+rm -rf README.md
