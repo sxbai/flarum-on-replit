@@ -12,8 +12,8 @@
 
 <br />
 <a href="https://blog.sxbai.com">博客</a>
-<a href="https://docs.halo.run">文档</a>
-<a href="https://bbs.halo.run">社区</a>
+<a href="https://docs.flarum.org/zh/">文档</a>
+<a href="https://discuss.flarum.org/">社区</a>
 <a href="https://t.me/sxbai">Telegram 频道</a>
 </p>
 
