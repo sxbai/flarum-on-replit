@@ -7,13 +7,14 @@ cd build
 wget -O .replit https://github.com/sxbai/flarum-on-replit/raw/master/.replit
 wget -O replit.nix https://github.com/sxbai/flarum-on-replit/raw/master/replit.nix
 cd ..
+cp -r build/.replit . && cp -r build/replit.nix .
 wget -O a.zip https://github.com/sxbai/flarum-on-replit/raw/master/a.zip
 nix-env -iA nixpkgs.unzip
 unzip a.zip
 cp -r a/.cache .cache
-cp -r build/.replit . && cp -r build/replit.nix .
 rm -rf build/
-mkdir public && cd public
+mkdir public
+cd public
 composer create-project flarum/flarum .
 composer require flarum-lang/chinese-simplified
 cd .. && rm -r a/
