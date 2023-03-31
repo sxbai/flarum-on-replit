@@ -1,0 +1,8 @@
+run = "php -S 0.0.0.0:8000 -t public/public/"
+
+entrypoint = "index.php"
+
+[nix]
+channel = "stable-22_11"
+[gitHubImport]
+requiredFiles = [".replit","replit.nix"]
