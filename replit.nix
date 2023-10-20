@@ -1,6 +1,6 @@
 { pkgs }: {
 	deps = [
-		pkgs.php80Packages.composer
+		pkgs.php82Packages.composer
   pkgs.wget
   pkgs.php82
 	];
