@@ -26,6 +26,6 @@
 bash <(curl -s https://raw.githubusercontent.com/sxbai/flarum-on-replit/master/install.sh)
 ```
 ## 演示图
-![](https://raw.iqiq.io/sxbai/flarum-on-replit/master/2023-03-31211933.png)
+![](https://gh-8ojg.onrender.com/https://raw.githubusercontent.com/sxbai/flarum-on-replit/master/2023-03-31211933.png)
 ## 数据库
 如若没有数据库服务器，可以选择免费freedb.tech数据库，注册地址：[https://freedb.tech/register.html](https://freedb.tech/register.html)
