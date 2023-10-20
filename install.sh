@@ -11,7 +11,7 @@ wget -O a.zip https://github.com/sxbai/flarum-on-replit/raw/master/a.zip
 nix-env -iA nixpkgs.unzip
 unzip a.zip
 cp -r a/.cache .cache
-nix-env -iA nixpkgs.php82Packages.composer
+nix-env -iA nixpkgs.php80Packages.composer
 mkdir public
 cd public
 composer create-project flarum/flarum .
